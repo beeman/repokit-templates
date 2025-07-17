@@ -1,0 +1,49 @@
+{
+  "name": "repokit-templates",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf node_modules && pnpm -r exec rm -rf node_modules",
+    "format": "prettier --write .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update-deps": "pnpm -r update --latest",
+    "update-template-readmes": "npx esrun ./scripts/create-template-readme.ts",
+    "update-readme": "pnpm update-template-readmes && automd && prettier --write {README.md,**/README.md,templates.json}"
+  },
+  "create-solana-dapp": {
+    "instructions": [
+      "Format the code:",
+      "+{pm} run format",
+      "Update dependencies:",
+      "+{pm} run update-deps",
+      "Update template READMEs and templates.json:",
+      "+{pm} run update-readme",
+      "Clean up the project repo:",
+      "+{pm} run clean"
+    ],
+    "rename": {
+      "demo": {
+        "to": "{{name}}",
+        "paths": [
+          "."
+        ]
+      }
+    }
+  },
+  "keywords": [],
+  "author": "Solana Developers",
+  "license": "MIT",
+  "devDependencies": {
+    "automd": "^0.4.0",
+    "esrun": "^3.2.30",
+    "prettier": "^3.5.3"
+  },
+  "templateGroups": [
+    {
+      "description": "Demo Templates",
+      "directory": "templates",
+      "name": "Demo"
+    }
+  ]
+}
