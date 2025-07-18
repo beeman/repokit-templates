@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf node_modules && pnpm -r exec rm -rf node_modules",
+    "clean": "repokit clean",
+    "generate": "repokit generate",
     "format": "prettier --write .",
+    "lint": "repokit lint",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "update-deps": "pnpm -r update --latest",
-    "update-template-readmes": "npx esrun ./scripts/create-template-readme.ts",
-    "update-readme": "pnpm update-template-readmes && automd && prettier --write {README.md,**/README.md,templates.json}"
+    "update-deps": "pnpm -r update --latest"
   },
   "create-solana-dapp": {
     "instructions": [
@@ -31,19 +31,27 @@
       }
     }
   },
+  "repository": {
+    "name": "beeman/repokit-templates",
+    "type": "git",
+    "url": "https://github.com/beeman/repokit-templates"
+  },
   "keywords": [],
   "author": "Solana Developers",
   "license": "MIT",
   "devDependencies": {
+    "@beeman/repokit": "0.0.0-canary-20250718084821",
     "automd": "^0.4.0",
     "esrun": "^3.2.30",
     "prettier": "^3.5.3"
   },
-  "templateGroups": [
-    {
-      "description": "Demo Templates",
-      "directory": "templates",
-      "name": "Demo"
-    }
-  ]
+  "repokit": {
+    "groups": [
+      {
+        "description": "Templates for create-solana-dapp",
+        "name": "Templates",
+        "path": "templates"
+      }
+    ]
+  }
 }

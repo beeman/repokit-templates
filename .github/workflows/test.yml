@@ -15,9 +15,9 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [ 20, 22 ]
-        pm: [ npm, pnpm, yarn ]
-        template: [ templates/node-script ]
+        node: [20, 22]
+        pm: [npm, pnpm, yarn]
+        template: [templates/node-script]
 
     steps:
       - name: Checkout repository

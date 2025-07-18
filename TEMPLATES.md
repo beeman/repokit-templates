@@ -1,6 +1,6 @@
-# Demo
+# Templates
 
-Demo Templates
+Templates for create-solana-dapp
 
 ### [node-script](templates/node-script)
 

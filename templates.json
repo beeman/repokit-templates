@@ -1,11 +1,12 @@
 [
   {
-    "description": "Demo Templates",
-    "directory": "templates",
-    "name": "Demo",
+    "description": "Templates for create-solana-dapp",
+    "name": "Templates",
+    "path": "templates",
     "templates": [
       {
         "description": "Node.js script with colors, prompts and dotenv",
+        "id": "gh:beeman/repokit-templates/templates/node-script",
         "keywords": ["node", "script", "prompts"],
         "name": "node-script",
         "path": "templates/node-script"

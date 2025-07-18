@@ -20,9 +20,9 @@ yarn create-solana-dapp -t gh:beeman/repokit-templates
 
 <!-- automd:file src="TEMPLATES.md" -->
 
-# Demo
+# Templates
 
-Demo Templates
+Templates for create-solana-dapp
 
 ### [node-script](templates/node-script)
 
