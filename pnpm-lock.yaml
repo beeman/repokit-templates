@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@beeman/repokit':
-        specifier: 0.0.0-canary-20250718084821
-        version: 0.0.0-canary-20250718084821
+        specifier: 0.0.0-canary-20250718232759
+        version: 0.0.0-canary-20250718232759
       automd:
         specifier: ^0.4.0
         version: 0.4.0
@@ -67,8 +67,8 @@ packages:
     resolution: {integrity: sha512-t3yaEOuGu9NlIZ+hIeGbBjFtZT7j2cb2tg0fuaJKeGotchRjjLfrBA9Kwf8quhpP1EUuxModQg04q/mBwyg8uA==}
     engines: {node: '>=6.9.0'}
 
-  '@beeman/repokit@0.0.0-canary-20250718084821':
-    resolution: {integrity: sha512-TjFx5QXkeCWbFKdpgOgvEKzh1/YdUncdENeakip8GBn49IM84+XZOzbnftMBKydjQLnvQdnHgWaCyw/C7SxNOQ==}
+  '@beeman/repokit@0.0.0-canary-20250718232759':
+    resolution: {integrity: sha512-5pwnlgJ1xjNVpzezNq+0KWfQ+gM2TkkIukXqaFdL5vNuH+JmjsoMuJFnYniefSBoLR/bomr8s2MSBhrZMldqeA==}
     hasBin: true
 
   '@clack/core@0.3.5':
@@ -1199,7 +1199,7 @@ snapshots:
 
   '@babel/runtime@7.27.4': {}
 
-  '@beeman/repokit@0.0.0-canary-20250718084821':
+  '@beeman/repokit@0.0.0-canary-20250718232759':
     dependencies:
       '@clack/prompts': 0.7.0
       commander: 13.1.0

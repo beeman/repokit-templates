@@ -41,7 +41,7 @@
   "author": "Solana Developers",
   "license": "MIT",
   "devDependencies": {
-    "@beeman/repokit": "0.0.0-canary-20250718084821",
+    "@beeman/repokit": "0.0.0-canary-20250718232759",
     "automd": "^0.4.0",
     "esrun": "^3.2.30",
     "prettier": "^3.5.3"
