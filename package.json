@@ -13,13 +13,14 @@
   },
   "create-solana-dapp": {
     "instructions": [
-      "Format the code:",
-      "+{pm} run format",
-      "Update dependencies:",
-      "+{pm} run update-deps",
-      "Update template READMEs and templates.json:",
-      "+{pm} run update-readme",
-      "Clean up the project repo:",
+      "Use repokit to manage your templates.",
+      "Lint the template metadata:",
+      "+{pm} repokit lint",
+      "Generate the repo metadata (template.json/TEMPLATES.md):",
+      "+{pm} repokit generate",
+      "Run commands in all templates:",
+      "+{pm} repokit run <command>",
+      "Clean the repo:",
       "+{pm} run clean"
     ],
     "rename": {
